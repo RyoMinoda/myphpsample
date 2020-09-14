@@ -33,15 +33,15 @@
                 </ul>
             </nav>
         </header>
-
+        <br>
         {include file=$contentsFile}
-        
+        <br>
         <footer>
             <nav>
-                <a href="home">トップページ</a>
-                <a href="articles/entrylist">記事一覧</a>
-                <a href="profile">著者について</a>
-                <a href="contact">お問い合わせ</a>
+                <a href="/">トップページ</a>
+                <a href="/articles/entrylist">記事一覧</a>
+                <a href="/profile">著者について</a>
+                <a href="/contact">お問い合わせ</a>
             </nav>
             <p>Copyright 2020</p>
         </footer>

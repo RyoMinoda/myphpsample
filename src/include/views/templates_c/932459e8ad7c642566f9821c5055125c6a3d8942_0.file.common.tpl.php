@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-09-14 06:18:47
+/* Smarty version 3.1.36, created on 2020-09-14 07:28:34
   from '/var/phpapp/include/views/templates/common.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f5f0b472a6939_91538282',
+  'unifunc' => 'content_5f5f1ba28dea57_14117560',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '932459e8ad7c642566f9821c5055125c6a3d8942' => 
     array (
       0 => '/var/phpapp/include/views/templates/common.tpl',
-      1 => 1600064325,
+      1 => 1600068505,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f5f0b472a6939_91538282 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5f1ba28dea57_14117560 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -56,16 +56,16 @@ function content_5f5f0b472a6939_91538282 (Smarty_Internal_Template $_smarty_tpl)
                 </ul>
             </nav>
         </header>
-
+        <br>
         <?php $_smarty_tpl->_subTemplateRender($_smarty_tpl->tpl_vars['contentsFile']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
-        
+        <br>
         <footer>
             <nav>
-                <a href="home">トップページ</a>
-                <a href="articles/entrylist">記事一覧</a>
-                <a href="profile">著者について</a>
-                <a href="contact">お問い合わせ</a>
+                <a href="/">トップページ</a>
+                <a href="/articles/entrylist">記事一覧</a>
+                <a href="/profile">著者について</a>
+                <a href="/contact">お問い合わせ</a>
             </nav>
             <p>Copyright 2020</p>
         </footer>

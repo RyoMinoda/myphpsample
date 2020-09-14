@@ -12,6 +12,7 @@
         $r->addRoute('GET', '/articles/entry/{id:\d+}/edit', 'ArticleEditionPage');
         $r->addRoute('GET', '/about', 'ProfilePage');
         $r->addRoute('GET', '/contact', 'ContactPage');
+        $r->addRoute('GET', '/images/{title:.+}', 'ImagePage');
     });
 
     configure($dispatcher);
