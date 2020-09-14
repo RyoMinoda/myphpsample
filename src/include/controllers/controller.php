@@ -1,19 +1,17 @@
 <?
-    define('viewsFolder', dirname(__FILE__).'/../views/');
-
+    define('views_folder', dirname(__FILE__).'/../views/');
+    require_once dirname(__FILE__).'/../repositories/ArticleRepository.php';
+    
     function HomePage($vars)
     {
-        include viewsFolder.'home.php';
+        include views_folder.'home.php';
         Home($vars);
-    }
-
-    function ArticleCreationPage($vars)
-    {
-        include viewsFolder.'articles.php';
-        ArticleIndex($vars);
     }
 
     function ArticleListPage($vars)
     {
-        echo $vars['page'];
+        $repository = new ArticleRepository();
+        $articles = $repository -> getAllArticles();
+        include views_folder.'article_list.php';
+        ArticleList($articles);
     }

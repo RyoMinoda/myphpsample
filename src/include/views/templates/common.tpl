@@ -11,46 +11,22 @@
             <nav class="blog-header">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a
-                        {if $currentPage == "home"}
-                            class= "nav-link disabled"
-                        {else}
-                            class= "nav-link"
-                        {/if}
-                         href="/">
+                        <a class= "nav-link" href="/">
                             Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a 
-                        {if $currentPage == "articles"}
-                            class= "nav-link disabled"
-                        {else}
-                            class= "nav-link"
-                        {/if}
-                         href="articles">
+                        <a class= "nav-link" href="/articles/entrylist">
                             Articles
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a
-                        {if $currentPage == "profile"}
-                            class= "nav-link disabled"
-                        {else}
-                            class= "nav-link"
-                        {/if}
-                         href="profile">
+                        <a class= "nav-link" href="/profile">
                             Profile
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a
-                        {if $currentPage == "contact"}
-                            class= "nav-link disabled"
-                        {else}
-                            class= "nav-link"
-                        {/if}
-                         href="contact">
+                        <a class= "nav-link" href="/contact">
                             Contact
                         </a>
                     </li>
@@ -58,13 +34,13 @@
             </nav>
         </header>
 
-        {include file=$contents_file}
+        {include file=$contentsFile}
         
         <footer>
             <nav>
                 <a href="home">トップページ</a>
-                <a href="articles">記事一覧</a>
-                <a href="about">著者について</a>
+                <a href="articles/entrylist">記事一覧</a>
+                <a href="profile">著者について</a>
                 <a href="contact">お問い合わせ</a>
             </nav>
             <p>Copyright 2020</p>

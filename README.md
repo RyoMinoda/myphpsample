@@ -4,6 +4,6 @@
         - mysql
 
 - ライブラリ
-    - composer
-    - fast route
-    - smarty
+    - Composer
+    - FastRoute
+    - Smarty

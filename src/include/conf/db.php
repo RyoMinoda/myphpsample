@@ -5,16 +5,16 @@
     const database = 'sample_db';
 
     function executeSql($sql){
-        $link = mysqli_connect(host, user , password, database);
-        if (!$link) {
+        $mysqli = new mysqli(host, user , password, database);
+        if (mysqli_connect_errno()) {
             echo "Error: Unable to connect to MySQL." . PHP_EOL;
-            echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-            echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-            exit;
+            exit();
         }
-        $recordSet = mysqli_query($link, $sql);
-        $data = mysqli_fetch_assoc($recordSet);
-        mysqli_close($link);
-        
-        return $data;
+        $result = $mysqli->query($sql);
+        if ($result === false) {
+            printf("Invalid query");
+            exit();
+        }
+        $mysqli->close();
+        return $result;
     }
