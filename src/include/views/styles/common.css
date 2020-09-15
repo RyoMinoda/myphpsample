@@ -1,0 +1,45 @@
+.blog-title{
+    position: relative;
+    display: inline-block;
+    left: 50;
+    margin-left: 20;
+    margin-top: 10;
+    margin-bottom: 10;
+}
+
+.blog-header{
+    position: relative;
+    display: inline-block;
+    margin-left: 100;
+}
+
+.common-menu{
+    position: absolute;
+    display: inline-block;
+    min-width: 700;
+    top: 10;
+    left: 15;
+    width: 100%;
+}
+
+header{
+    grid-row: 1/2;
+}
+
+body{
+    display: grid;
+    min-width: 700;
+    grid-template-rows: 80px 1fr 100px;
+}
+
+.common-contents{
+    display: inline-block;
+    grid-row: 2/3;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: inline-block;
+    grid-row: 3/4;
+}

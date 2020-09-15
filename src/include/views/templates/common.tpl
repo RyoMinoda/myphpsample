@@ -2,12 +2,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Sample Blog</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" >
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+        <style>
+            {$style}
+        </style>
     </head>
     <body>
         <header>
-        <h2 class="blog-title">Sample Blog</h2>
+        <div class="common-menu">
+            <h2 class="blog-title">Sample Blog</h2>
             <nav class="blog-header">
                 <ul class="nav">
                     <li class="nav-item">
@@ -32,9 +39,12 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+            </div>
+            </header>
         <br>
-        {include file=$contentsFile}
+        <div class="common-contents">
+            {include file=$contentsFile}
+        </div>
         <br>
         <footer>
             <nav>
