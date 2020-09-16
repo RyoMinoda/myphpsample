@@ -9,6 +9,6 @@
 
         $smarty->assign('contentsFile', dirname(__FILE__).'/../contents/article_list.tpl');
         $smarty->assign('articles', $articles);
-        $smarty->assign('style', ReadAllStyles());
+        $smarty->assign('css_style', ReadAllStyles());
         $smarty->display('common.tpl');
     }

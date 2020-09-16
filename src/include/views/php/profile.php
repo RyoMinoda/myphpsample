@@ -8,6 +8,6 @@
 
         $smarty->assign('contentsFile', dirname(__FILE__).'/../contents/profile.tpl');
         $smarty->assign('articles', $articles);
-        $smarty->assign('style', ReadAllStyles());
+        $smarty->assign('css_style', ReadAllStyles());
         $smarty->display('common.tpl');
     }

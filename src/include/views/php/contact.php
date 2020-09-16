@@ -8,8 +8,7 @@
         $smarty->template_dir = dirname(__FILE__).'/../templates/';
         $smarty->compile_dir  = dirname(__FILE__).'/../templates_c/';
         
-        $style = ReadAllStyles();
         $smarty->assign('contentsFile', dirname(__FILE__).'/../contents/contact.tpl');
-        $smarty->assign('style', $style);
+        $smarty->assign('css_style', ReadAllStyles());
         $smarty->display('common.tpl');
     }

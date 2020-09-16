@@ -1,0 +1,3 @@
+<div>
+    New Article
+</div>

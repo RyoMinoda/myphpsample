@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-09-16 14:31:48
+/* Smarty version 3.1.36, created on 2020-09-16 18:06:37
   from '/var/phpapp/include/views/templates/common.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f6221d4247824_02685315',
+  'unifunc' => 'content_5f62542d90fc60_05020226',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '932459e8ad7c642566f9821c5055125c6a3d8942' => 
     array (
       0 => '/var/phpapp/include/views/templates/common.tpl',
-      1 => 1600266704,
+      1 => 1600279585,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f6221d4247824_02685315 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f62542d90fc60_05020226 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,7 +31,7 @@ function content_5f6221d4247824_02685315 (Smarty_Internal_Template $_smarty_tpl)
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
         crossorigin="anonymous">
         <style>
-            <?php echo $_smarty_tpl->tpl_vars['style']->value;?>
+            <?php echo $_smarty_tpl->tpl_vars['css_style']->value;?>
 
         </style>
     </head>
