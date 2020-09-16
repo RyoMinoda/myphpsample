@@ -5,19 +5,18 @@
 .article-index-string{
     position: relative;
     margin-left: 15;
-    padding-left: 30;
-    padding-right: 30;
+    margin-bottom: 20;
+    padding-left: 60;
+    padding-right: 60;
 }
 
 .article-list-flexbox{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 92%;
+    width: 100%;
     padding-left: 4%;
-    padding-right: 4%; 
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-right: 4%;
 }
 
 .article-card{

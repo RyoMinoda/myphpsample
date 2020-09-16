@@ -10,7 +10,14 @@
             return executeSql($sql);
         }
 
-        function getArticleById($id){
+        function getArticlesOrderBy($column, $order)
+        {
+            $sql = 'Select * from Article Order By '.$column.' '.$order;
+            return executeSql($sql);
+        }
+
+        function getArticleById($id)
+        {
             return $id;
         }
 

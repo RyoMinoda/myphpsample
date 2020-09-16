@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-09-15 11:27:50
+/* Smarty version 3.1.36, created on 2020-09-16 04:01:56
   from '/var/phpapp/include/views/contents/article_list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f60a536b49357_74077071',
+  'unifunc' => 'content_5f618e34757146_89882745',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f105a2a84fd76d3fb0a1f4deca7eed72ca616da3' => 
     array (
       0 => '/var/phpapp/include/views/contents/article_list.tpl',
-      1 => 1600168004,
+      1 => 1600228911,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f60a536b49357_74077071 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f618e34757146_89882745 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="article-list-conainer">
     <h5 class="article-index-string">記事一覧</h5>
         <div class="article-list-flexbox">
@@ -38,13 +38,14 @@ $_smarty_tpl->tpl_vars['article']->do_else = false;
                         </div>
                         <figure class="article-card-figure">
                             <img
-                            class="article-card-image"
-                            src=<?php ob_start();
+                                class="article-card-image"
+                                src=<?php ob_start();
 echo ("/images/").($_smarty_tpl->tpl_vars['article']->value['image']);
 $_prefixVariable1 = ob_get_clean();
 echo $_prefixVariable1;?>
 
-                            alt=<?php echo $_smarty_tpl->tpl_vars['article']->value['image'];?>
+                                onerror="this.src='/images/no_image.jpg'"
+                                alt=<?php echo $_smarty_tpl->tpl_vars['article']->value['image'];?>
 >
                         </figure>
                         <div class="article-list-articles">

@@ -9,9 +9,10 @@
                         </div>
                         <figure class="article-card-figure">
                             <img
-                            class="article-card-image"
-                            src={{"/images/"|cat:$article.image}}
-                            alt={$article.image}>
+                                class="article-card-image"
+                                src={{"/images/"|cat:$article.image}}
+                                onerror="this.src='/images/no_image.jpg'"
+                                alt={$article.image}>
                         </figure>
                         <div class="article-list-articles">
                             {mb_substr($article.contents, 0, 60)}...

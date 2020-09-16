@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-09-15 08:17:23
+/* Smarty version 3.1.36, created on 2020-09-16 14:31:48
   from '/var/phpapp/include/views/templates/common.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5f607893d48eb3_65850953',
+  'unifunc' => 'content_5f6221d4247824_02685315',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '932459e8ad7c642566f9821c5055125c6a3d8942' => 
     array (
       0 => '/var/phpapp/include/views/templates/common.tpl',
-      1 => 1600157578,
+      1 => 1600266704,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f607893d48eb3_65850953 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f6221d4247824_02685315 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -35,50 +35,51 @@ function content_5f607893d48eb3_65850953 (Smarty_Internal_Template $_smarty_tpl)
 
         </style>
     </head>
-    <body>
-        <header>
-        <div class="common-menu">
+    <body class="common-body">
+        <header class="common-menu">
+        <div>
             <h2 class="blog-title">Sample Blog</h2>
-            <nav class="blog-header">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/articles/entrylist">
-                            Articles
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/profile">
-                            Profile
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="blog-header">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/articles/entrylist">
+                                Articles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/profile">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <a class="common-log-in" href="/user:tab=home">
+                Log In
+            </a>
             </header>
-        <br>
         <div class="common-contents">
             <?php $_smarty_tpl->_subTemplateRender($_smarty_tpl->tpl_vars['contentsFile']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
         </div>
-        <br>
-        <footer>
-            <nav>
-                <a href="/">トップページ</a>
-                <a href="/articles/entrylist">記事一覧</a>
-                <a href="/profile">著者について</a>
-                <a href="/contact">お問い合わせ</a>
+        <footer class="common-footer">
+            <nav class="footer-nav">
+                <a href="/" class="footer-link">トップページ</a>
+                <a href="/articles/entrylist" class="footer-link">記事一覧</a>
+                <a href="/profile" class="footer-link">著者について</a>
+                <a href="/contact" class="footer-link">お問い合わせ</a>
             </nav>
-            <p>Copyright 2020</p>
+            <p class="copyright-label">Copyright 2020</p>
         </footer>
     </body>
 </html><?php }

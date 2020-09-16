@@ -1,6 +1,7 @@
 <?php
     require_once dirname(__FILE__).'/../../../vendor/smarty/smarty/libs/Smarty.class.php';
     require_once dirname(__FILE__).'/../styles/styles.php';
+    
     function ArticleList($articles){
         $smarty = new Smarty();
         $smarty->template_dir = dirname(__FILE__).'/../templates/';

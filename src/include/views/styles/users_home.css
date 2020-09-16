@@ -1,0 +1,55 @@
+.user-common-body {
+    display: inline-block;
+    height: 100%;
+}
+
+.navigation-aside {
+    position: fixed;
+    display: inline-block;
+    width: 170px;
+    height: 100%;
+    font-size: smaller;
+    color: white;
+    background-color: rgb(133, 135, 152);
+    overflow: scroll;
+}
+
+.navigation-aside::-webkit-scrollbar {
+    display: none;
+}
+
+.users_home_list_tab {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    background: transparent;
+}
+
+.users_home_list {
+    list-style: none;
+    background: transparent;
+}
+
+.users_home_list div {
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: transparent;
+    color: rgb(242, 242, 254);
+    cursor: default;
+}
+
+.users_home_list a:hover {
+    text-decoration: none;
+}
+
+.users_home_list div:hover {
+    background-color: rgb(108, 121, 142);
+    color: rgb(164, 164, 255);
+}
+
+.user-common-contents {
+    position: absolute;
+    top: 0px;
+    left: 170px;
+}

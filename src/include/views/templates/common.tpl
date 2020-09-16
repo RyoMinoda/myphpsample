@@ -11,49 +11,50 @@
             {$style}
         </style>
     </head>
-    <body>
-        <header>
-        <div class="common-menu">
+    <body class="common-body">
+        <header class="common-menu">
+        <div>
             <h2 class="blog-title">Sample Blog</h2>
-            <nav class="blog-header">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/articles/entrylist">
-                            Articles
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/profile">
-                            Profile
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class= "nav-link" href="/contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="blog-header">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/articles/entrylist">
+                                Articles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/profile">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class= "nav-link" href="/contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <a class="common-log-in" href="/user:tab=home">
+                Log In
+            </a>
             </header>
-        <br>
         <div class="common-contents">
             {include file=$contentsFile}
         </div>
-        <br>
-        <footer>
-            <nav>
-                <a href="/">トップページ</a>
-                <a href="/articles/entrylist">記事一覧</a>
-                <a href="/profile">著者について</a>
-                <a href="/contact">お問い合わせ</a>
+        <footer class="common-footer">
+            <nav class="footer-nav">
+                <a href="/" class="footer-link">トップページ</a>
+                <a href="/articles/entrylist" class="footer-link">記事一覧</a>
+                <a href="/profile" class="footer-link">著者について</a>
+                <a href="/contact" class="footer-link">お問い合わせ</a>
             </nav>
-            <p>Copyright 2020</p>
+            <p class="copyright-label">Copyright 2020</p>
         </footer>
     </body>
 </html>
