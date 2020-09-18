@@ -1,12 +1,12 @@
 .user-common-body {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    width: 100%;
     height: 100%;
 }
 
 .navigation-aside {
-    position: fixed;
-    display: inline-block;
-    width: 170px;
+    width: 100%;
     height: 100%;
     font-size: smaller;
     color: white;
@@ -33,8 +33,8 @@
 
 .users_home_list div {
     padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
     background: transparent;
     color: rgb(242, 242, 254);
     cursor: default;
@@ -49,8 +49,24 @@
     color: rgb(164, 164, 255);
 }
 
-.user-common-contents {
-    position: absolute;
-    top: 0px;
-    left: 170px;
+.user-common-grid-header {
+    display: fixed;
+    grid-column: 1 / 2;
+    grid-row: 1;
+    width: 100%;
+    background-color: seagreen;
+}
+
+.user-common-grid-contents {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.user-common-message {
+    display: inline-block;
+    padding: 0px 7px 0px 7px;
+    border-radius: 4px;
+    margin-left: 4px;
+    margin-right: 1px;
+    background-color: rgb(218, 100, 87);
 }

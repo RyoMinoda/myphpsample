@@ -1,0 +1,106 @@
+.users-new-entry-outside {
+    display: flex;
+    justify-content: center;
+}
+
+.users-new-entry-inside {
+    display: inline-block;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.users-new-entry-grid {
+    display: grid;
+    grid-template-columns: 120px 800px;
+    grid-template-rows: 40px 600px 1fr 115px;
+}
+
+.users-new-entry-grid-title-string {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.users-new-entry-grid-title-input {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    border: groove 1px rgb(217, 216, 227);
+    border-radius: 5px;
+}
+
+.users-new-entry-grid-contents-string {
+    display: flex;
+    grid-row: 2;
+    grid-column: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.users-new-entry-grid-contents-textarea {
+    display: flex;
+    grid-row: 2;
+    grid-column: 2;
+    align-items: center;
+    border: groove 1px rgb(217, 216, 227);
+    border-radius: 5px;
+}
+
+.users-new-entry-grid-image-string {
+    display: flex;
+    grid-row: 3;
+    grid-column: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.users-new-entry-grid-image-button {
+    display: flex;
+    grid-row: 3;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    border: groove 1px rgb(217, 216, 227);
+    border-radius: 5px;
+}
+
+.users-new-entry-grid-post-entry-button {
+    display: flex;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+.users-new-entry-title-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.users-new-entry-contents-textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    resize: none;
+}
+
+.users-new-entry-nomal-button {
+    width: 100px;
+    height: 28px;
+    margin: 8px 18px 8px 18px;
+    border-radius: 4px;
+    font-size: smaller;
+    border: none;
+    background-color: rgb(123, 143, 169);
+    color: white;
+}
